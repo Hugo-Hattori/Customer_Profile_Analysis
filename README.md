@@ -53,5 +53,5 @@ and Family Size X Score graphics we can conclude that the ICP is above
 10 to 15 years of work experience, and has a family size no larger than 7.</p>
 
 <p> Note: this is a project developed for academic purposes, therefore the
-data contained in "Clientes.csv" is fictitious and used only to learn Pandas 
+data contained in "Clientes.csv" is fictitious and used only to learn Pandas and 
 Plotly packages applications.</p>
