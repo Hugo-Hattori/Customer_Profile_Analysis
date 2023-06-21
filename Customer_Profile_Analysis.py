@@ -8,16 +8,18 @@ tabela = tabela.drop("Unnamed: 8", axis=1)
 display(tabela)
 
 
+
 #Passo 3: Tratamento de dados
 tabela["Salário Anual (R$)"] = pd.to_numeric(tabela["Salário Anual (R$)"], errors="coerce")
-display(tabela[tabela["Profissão"].isna()])
 tabela = tabela.dropna()
 print(tabela.info())
+
 
 
 #Passo 4: Análise inicial -> entender as notas do clientes (avaliar a média como parâmetro)
 display(tabela.describe())
 #A média das notas é de em torno de 52 (principal parâmetro de comparação)
+
 
 
 #Passo 5: Análise completa -> entender como a característica do cliente impacta na nota
@@ -29,6 +31,7 @@ for coluna in tabela.columns:
 
     #mostrar o gráfico
     grafico.show()
+
 
 
 #Correção de problema de exibição dos gráficos
